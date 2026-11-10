@@ -1,0 +1,271 @@
+:root {
+    --bg: #f8efe5;
+    --card: #fffaf4;
+    --brown: #704426;
+    --dark: #382318;
+    --text: #493326;
+    --gray: #8b7565;
+    --border: #ead8c5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Redaction 10", Georgia, serif;
+    line-height: 1.7;
+}
+
+
+
+header {
+    background: var(--card);
+    padding: 18px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(70, 40, 20, 0.08);
+    border-bottom: 1px solid var(--border);
+}
+
+
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #b17a4c;
+}
+
+#themeBtn {
+    background: var(--brown);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 30px;
+}
+
+/* ===== MAIN HEADING ===== */
+
+main > h1 {
+    color: var(--brown);
+    font-size: 55px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+
+
+section {
+    margin: 30px 0;
+    padding: 45px 30px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(70, 40, 20, 0.07);
+}
+
+section h2 {
+    color: var(--brown);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: var(--brown);
+    margin-bottom: 10px;
+}
+
+section p {
+    color: var(--gray);
+    margin-bottom: 12px;
+}
+
+
+
+#about {
+    text-align: center;
+}
+
+
+#skills {
+    text-align: center;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background: #f7ebde;
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 5px 15px rgba(70, 40, 20, 0.12);
+}
+
+
+
+#projects {
+    text-align: center;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: #f7ebde;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+#education {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+}
+
+th {
+    background: var(--brown);
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+
+
+#contact {
+    text-align: center;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 13px;
+    margin: 8px 0;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: white;
+    font-size: 15px;
+}
+
+#contact button {
+    background: var(--brown);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+
+footer {
+    background: var(--brown);
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    main > h1 {
+        font-size: 36px;
+    }
+
+    section {
+        padding: 30px 18px;
+    }
+
+    .skill-container,
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    section{
+        scroll-margin-top: 90px;
+    
+}
